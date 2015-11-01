@@ -1,0 +1,16 @@
+{
+  "name": "desafio final",
+  "authors": [
+    "Rodrigo Pizarro <rpizarro09@gmail.com>"
+  ],
+  "description": "desafio final",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "superslides": "~0.6.2",
+    "wow": "~1.1.2"
+  }
+}
