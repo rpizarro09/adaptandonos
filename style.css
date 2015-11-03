@@ -1,34 +1,9 @@
-/*
-Template Name: SinglePro - Multipurpose Bootstrap HTML5/CSS3 One Page Template
-Template URI:http://www.wpfreeware.com/themes/premium/singlepro/
-Author: WpFreeware
-Author URI: http://www.wpfreeware.com
-Description: SinglePro - Multipurpose Bootstrap HTML5/CSS3 One Page Template.
-Version: 2.0
-Tags: light, white, landing page,single page,Multipurpose,custom-colors,Bootstrap,responsive, html5, css3
-*/
 
 
-/* Table of Content
-==================================================
-	#BASIC TYPOGRAPHY
-	#HEADER
-	#ABOUT SECTION
-	#SERVICE SECTION
-	#Works SECTION
-	#TEAM SECTION
-	#PRICING SECTION
-	#HOME BLOG SECTION
-  #TESTIMONIAL SECTION
-  #CLIENTS SECTION
-  #CONTACT US SECTION
-  #FOOTER
-  #BLOG PAGE 
-*/
 
 
 /*--------------------*/
-/* BASIC TYPOGRAPHY */
+/* TYPO BASICA */
 /*--------------------*/
 
 body,html{
@@ -81,23 +56,23 @@ img{
   left:0;
   right:0;
   bottom:0;
-  background-color:#000; /* change if the mask should have another color then white */
-  z-index:99999; /* makes sure it stays on top */
+  background-color:#000; /* color blanco */
+  z-index:99999; 
 }
 
 #status {
   width:200px;
   height:200px;
   position:absolute;
-  left:50%; /* centers the loading animation horizontally one the screen */
-  top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(img/status.gif); /* path to your loading animation */
+  left:50%; /* ccentra horizonalmente*/
+  top:50%; /* centra verticalmente*/
+  background-image:url(img/status.gif); /* animacion del loading*/
   background-repeat:no-repeat;
   background-position:center;
-  margin:-100px 0 0 -100px; /* is width and height divided by two */
+  margin:-100px 0 0 -100px; /* alto y ancho dividido en 2*/
 }
 
-/*scrol to top*/
+/*scroll arriba */
 
 .scrollToTop {
   bottom: 60px;
@@ -429,7 +404,7 @@ img{
 
 
 /*--------------------*/
-/* ABOUT SECTION */
+/* sobre nosotros*/
 /*--------------------*/
 
 #about {
@@ -585,23 +560,6 @@ img{
 }
 
 
-.skills_area{
-	float: left;
-	display: inline;
-	width: 100%;
-	min-height: 350px;
-	padding: 85px 0px;
-	background-image: url(img/skills_bg.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: relative;
-}
-
-
-.skills{
-	position: relative;
-	z-index: 999;
-}
 
 
 .heading h3 {
@@ -644,7 +602,7 @@ div[data-dimension] {
 
 
 /*--------------------*/
-/* SERVICE SECTION */
+/* SERVICIOS*/
 /*--------------------*/
 
 
@@ -729,7 +687,7 @@ div[data-dimension] {
 
 
 /*--------------------*/
-/* TEAM SECTION */
+/* EQUIPO */
 /*--------------------*/
 
 
@@ -836,7 +794,7 @@ div[data-dimension] {
 
 
 /*--------------------*/
-/* CLIENTS SECTION */
+/* MARCAS*/
 /*--------------------*/
 
 
@@ -897,7 +855,7 @@ div[data-dimension] {
 
 
 /*--------------------*/
-/* CONTACT US SECTION */
+/* CONTACTANOS */
 /*--------------------*/
 
 
@@ -1226,7 +1184,7 @@ textarea .form-control {
 
 
 /*======================///////////////
-			start responsive style
+			RESPONSIVE
 =====================///////////////////////*/
 
 
