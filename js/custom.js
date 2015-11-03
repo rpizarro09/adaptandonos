@@ -4,7 +4,7 @@ jQuery(function($){
 
 
 	/* ----------------------------------------------------------- */
-	/*  1. Superslides Slider
+	/*   Superslides Slider
 	/* ----------------------------------------------------------- */
 	jQuery('#slides').superslides({
       animation: 'slide',
@@ -13,7 +13,7 @@ jQuery(function($){
 	
 	
 	/* ----------------------------------------------------------- */
-	/*  2. Fixed Top Menubar
+	/*  Fixed Top Menubar
 	/* ----------------------------------------------------------- */
 
 	// For fixed top bar
@@ -28,7 +28,7 @@ jQuery(function($){
 
 
 	/* ----------------------------------------------------------- */
-	/*  3. Featured Slider
+	/*  Featured Slider
 	/* ----------------------------------------------------------- */
 	
 
@@ -49,7 +49,7 @@ jQuery(function($){
 
 
 	/* ----------------------------------------------------------- */
-	/*  5. Wow smooth animation
+	/*   Wow smooth animation
 	/* ----------------------------------------------------------- */
 
 	wow = new WOW(
@@ -63,7 +63,7 @@ jQuery(function($){
 
 	
 	/* ----------------------------------------------------------- */
-	/*  7. TEAM SLIDER
+	/*  SLIDER EQUIPO
 	/* ----------------------------------------------------------- */
 
 		$('.team_slider').slick({
@@ -105,7 +105,7 @@ jQuery(function($){
 	
 
     /* ----------------------------------------------------------- */
-	/*  10. CLIENTS SLIDER
+	/*  SLIDER MARCAS
 	/* ----------------------------------------------------------- */
 
     $('.clients_slider').slick({
@@ -146,10 +146,9 @@ jQuery(function($){
 
 
 	/* ----------------------------------------------------------- */
-	/*  12. SCROLL TOP BUTTON
+	/*  SCROLL TOP BUTTON
 	/* ----------------------------------------------------------- */
 
-	//Check to see if the window is top if not then display button
 
 	  $(window).scroll(function(){
 	    if ($(this).scrollTop() > 300) {
@@ -159,7 +158,6 @@ jQuery(function($){
 	    }
 	  });
 	   
-	  //Click event to scroll to top
 
 	  $('.scrollToTop').click(function(){
 	    $('html, body').animate({scrollTop : 0},800);
@@ -168,36 +166,33 @@ jQuery(function($){
 
 
 	/* ----------------------------------------------------------- */
-	/*  13. PRELOADER 
+	/* PRELOADER 
 	/* ----------------------------------------------------------- */ 
 
-	  jQuery(window).load(function() { // makes sure the whole site is loaded
-      $('#status').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
+	  jQuery(window).load(function() { // se asegura de que todo el sitio este cargado
+      $('#status').fadeOut(); // fade out de la animacion
+      $('#preloader').delay(100).fadeOut('slow'); // fade out del preloader que cubre la pagina
       $('body').delay(100).css({'overflow':'visible'});
     })
 
 
 	/* ----------------------------------------------------------- */
-	/*  14. MENU SCROLL 
+	/*  MENU SCROLL 
 	/* ----------------------------------------------------------- */
 
-	//MENU SCROLLING WITH ACTIVE ITEM SELECTED
 
-	// Cache selectors
+	// Seleccion en cache
 	var lastId,
 	topMenu = $("#top-menu"),
 	topMenuHeight = topMenu.outerHeight()+13,
-	// All list items
+	// todos los items listados
 	menuItems = topMenu.find("a"),
-	// Anchors corresponding to menu items
+	// ancla al item listado
 	scrollItems = menuItems.map(function(){
 	  var item = $($(this).attr("href"));
 	  if (item.length) { return item; }
 	});
 
-	// Bind click handler to menu items
-	// so we can get a fancy scroll animation
 	menuItems.click(function(e){
 	  var href = $(this).attr("href"),
 	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
@@ -207,23 +202,23 @@ jQuery(function($){
 	  e.preventDefault();
 	});
 
-	// Bind to scroll
+
 	$(window).scroll(function(){
-	   // Get container scroll position
+	   
 	   var fromTop = $(this).scrollTop()+topMenuHeight;
 	   
-	   // Get id of current scroll item
+	
 	   var cur = scrollItems.map(function(){
 	     if ($(this).offset().top < fromTop)
 	       return this;
 	   });
-	   // Get the id of the current element
+	  
 	   cur = cur[cur.length-1];
 	   var id = cur && cur.length ? cur[0].id : "";
 	   
 	   if (lastId !== id) {
 	       lastId = id;
-	       // Set/remove active class
+	     
 	       menuItems
 	         .parent().removeClass("active")
 	         .end().filter("[href=#"+id+"]").parent().addClass("active");
@@ -232,7 +227,7 @@ jQuery(function($){
 
 
 	/* ----------------------------------------------------------- */
-	/*  15. MOBILE MENU ACTIVE CLOSE 
+	/*  MOBILE MENU
 	/* ----------------------------------------------------------- */ 
 
 	$('.navbar-nav').on('click', 'li a', function() {
